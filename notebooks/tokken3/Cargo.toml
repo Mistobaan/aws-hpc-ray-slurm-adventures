@@ -1,0 +1,17 @@
+[package]
+name = "tokken3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0.30"
+ndarray-npy = { version = "0.8.1", default-features = false }
+rayon = "1.5.1"
+numpy = "0.15.0"
+ndarray = { version = "0.15.4", features = ["approx", "rayon"] }
+pyo3 = { version = "0.15.1", features = ["extension-module"] }
+
+[dev-dependencies]
+temp_testdir = "0.2.3"
